@@ -1,0 +1,40 @@
+# Master Abbreviations List
+
+| Abbreviation | Expanded Term |
+|--------------|---------------|
+| ABDM | Ayushman Bharat Digital Mission |
+| ADE | Adverse Drug Event |
+| ADR | Adverse Drug Reaction |
+| AI | Artificial Intelligence |
+| AUC | Area Under the Curve |
+| CDSS | Clinical Decision Support System |
+| CDSCO | Central Drugs Standard Control Organisation |
+| CNN | Convolutional Neural Network |
+| CRO | Contract Research Organisation |
+| EHR | Electronic Health Record |
+| EMR | Electronic Medical Record |
+| FAERS | FDA Adverse Event Reporting System |
+| GDPR | General Data Protection Regulation |
+| HIPAA | Health Insurance Portability and Accountability Act |
+| ICD | International Classification of Diseases |
+| ICMR | Indian Council of Medical Research |
+| ICU | Intensive Care Unit |
+| LIME | Local Interpretable Model-Agnostic Explanations |
+| LSTM | Long Short-Term Memory |
+| MedDRA | Medical Dictionary for Regulatory Activities |
+| MIMIC | Medical Information Mart for Intensive Care |
+| ML | Machine Learning |
+| NLP | Natural Language Processing |
+| NSAID | Non-Steroidal Anti-Inflammatory Drug |
+| PDR | Physician’s Desk Reference |
+| PRISMA | Preferred Reporting Items for Systematic Reviews and Meta-Analyses |
+| PvPI | Pharmacovigilance Programme of India |
+| RNN | Recurrent Neural Network |
+| ROC | Receiver Operating Characteristic |
+| RxNorm | Standardised Nomenclature for Clinical Drugs |
+| SHAP | SHapley Additive exPlanations |
+| SIDER | Side Effect Resource |
+| SMOTE | Synthetic Minority Over-sampling Technique |
+| SVM | Support Vector Machine |
+| WHO | World Health Organization |
+| XAI | Explainable Artificial Intelligence |
