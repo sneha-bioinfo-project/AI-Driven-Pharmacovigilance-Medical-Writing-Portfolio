@@ -1,42 +1,75 @@
-# Evidence Table: Machine Learning Applications in ADR Detection
+# Evidence Tables & Quantitative Data Syntheses
 
-## Overview
+This document presents evidence tables and quantitative summaries extracted from the review manuscript:
 
-This evidence table summarises key data sources, computational approaches, and applications discussed in the review manuscript on machine learning-based adverse drug reaction (ADR) detection using electronic health records (EHRs) and healthcare big data.
-
-The table focuses on major resources and methodological categories relevant to pharmacovigilance research.
+**"Machine Learning for Early Detection of Adverse Drug Reactions Using Big Data from Electronic Health Records"**
 
 ---
 
-## Evidence Summary
+## Table 1: Overview of Benchmark Datasets for ADR Prediction Research
 
-| Evidence Source / Approach | Data Type | Application in ADR Research | Key Contribution |
-|---|---|---|---|
-| Electronic Health Records (EHRs) | Structured and unstructured clinical data | ADR prediction and risk modelling | Enables analysis of patient demographics, laboratory results, prescriptions, diagnoses, and clinical notes |
-| FAERS (FDA Adverse Event Reporting System) | Spontaneous adverse event reports | Post-marketing safety surveillance and signal detection | Supports large-scale pharmacovigilance analysis using reported drug-event associations |
-| SIDER Database | Drug–side effect associations | Drug safety modelling and ADR relationship analysis | Provides curated information linking drugs with known side effects |
-| MIMIC-III Database | Critical care EHR data | Clinical prediction and healthcare machine learning research | Provides longitudinal patient records including medications, diagnoses, and outcomes |
-| EHRSHOT Benchmark | Clinical prediction dataset | Evaluation of machine learning approaches in healthcare scenarios | Supports development and assessment of predictive models |
-| PvPI (Pharmacovigilance Programme of India) | ADR case reports | Indian pharmacovigilance monitoring | Represents national-level ADR reporting infrastructure |
+*(Reproduced from Manuscript Table 1)*
 
----
-
-## Machine Learning Approaches
-
-| Methodology | Data Application | Role in ADR Detection |
-|---|---|---|
-| Random Forest | Structured clinical data | Drug risk prediction and classification |
-| Decision Trees | Patient and medication features | Interpretable ADR prediction models |
-| XGBoost / Gradient Boosting | Structured healthcare datasets | Improved predictive performance for classification tasks |
-| Support Vector Machines (SVM) | Feature-based clinical datasets | Pattern recognition and ADR classification |
-| Deep Learning Models | Clinical notes and complex healthcare data | Extraction of complex patterns from high-dimensional datasets |
-| Natural Language Processing (NLP) | Unstructured clinical text | Identification of ADR mentions and drug-event relationships |
+| Dataset Name | Country/Region | Size | Data Type | Accessibility | Notes |
+|---|---|---|---|---|---|
+| MIMIC-III | USA | ~40,000 patients | EHR (ICU) | Open | Rich structured and unstructured clinical data |
+| SIDER | International | >1,000 drugs | Drug–ADR pairs | Free | Covers marketed medicines |
+| PvPI | India | N/A | ADR case reports | Restricted | Indian pharmacovigilance dataset |
+| FAERS | USA | Millions | Spontaneous ADR reports | Free | FDA database enabling global safety comparisons |
 
 ---
 
-## Evidence Synthesis Notes
+## Table 2: Overview of Key Machine Learning Algorithms Applied to ADR Prediction
 
-- Machine learning approaches demonstrate potential for improving ADR signal detection compared with traditional pharmacovigilance methods.
-- Model performance depends on data quality, preprocessing strategies, dataset characteristics, and validation approaches.
-- Major implementation challenges include data heterogeneity, class imbalance, privacy concerns, interpretability, and clinical integration.
-- External validation and explainable AI approaches remain important requirements for real-world deployment.
+*(Reproduced from Manuscript Table 2)*
+
+| Algorithm | Data Type | Strengths | Weaknesses | Typical Use |
+|---|---|---|---|---|
+| Random Forest | Tabular data | Interpretable, robust | Sensitive to imbalance | Drug risk prediction |
+| XGBoost | Tabular data | Fast, accurate | Less interpretable | ADR signal detection |
+| Deep Neural Networks | Text / Images | Powerful, flexible | Requires large datasets | Clinical note mining |
+| Logistic Regression | Tabular data | Simple, interpretable | Limited with complex data | Binary ADR prediction |
+
+---
+
+## Table 3: Distribution of Adverse Drug Reactions (ADRs) by Gender and Age Group (2017–2021)
+
+*(Reproduced from Manuscript Table 3; Indian teaching hospital cohort, Total n = 104)*
+
+### Total ADR Distribution by Year
+
+| Year | Number of ADRs (%) |
+|---|---|
+| 2017 | 4 (3.8%) |
+| 2018 | 37 (35.5%) |
+| 2019 | 23 (22.1%) |
+| 2020 | 12 (11.6%) |
+| 2021 | 28 (27%) |
+
+---
+
+### Gender-wise Distribution of ADRs
+
+| Category | 2017 | 2018 | 2019 | 2020 | 2021 |
+|---|---|---|---|---|---|
+| Male n (%) | 3 (75%) | 13 (35%) | 11 (48%) | 5 (42%) | 11 (39%) |
+| Female n (%) | 1 (25%) | 24 (65%) | 12 (52%) | 7 (58%) | 17 (61%) |
+
+---
+
+### Age-wise Distribution of ADRs
+
+| Age Group | 2017 | 2018 | 2019 | 2020 | 2021 |
+|---|---|---|---|---|---|
+| Up to 1 year | 1 (25%) | 3 (8.1%) | 4 (17.4%) | 1 (8.3%) | 0 |
+| >1–5 years | 0 | 0 | 0 | 4 (17.4%) | 2 (16.7%) |
+| >5–12 years | 0 | 0 | 0 | 2 (8.7%) | 0 |
+| >12–18 years | 0 | 0 | 0 | 0 | 1 (3%) |
+| >18–65 years | 3 (75%) | 33 (89.1%) | 12 (52.2%) | 9 (75%) | 25 (89%) |
+| >65 years | 0 | 0 | 1 (2.7%) | 1 (4.3%) | 2 (7%) |
+
+---
+
+## Data Source Note
+
+All tables are reproduced from the primary manuscript content provided for this portfolio. No additional datasets, statistics, or external analyses have been added.
